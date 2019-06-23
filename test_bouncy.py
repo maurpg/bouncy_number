@@ -3,6 +3,9 @@ from .bouncy import evaluate_number , evaluate , is_bouncy
 
 class BouncyTestCase(TestCase):
     """Class to relize test to functions of bouncy numbers"""
+    def test_validate_the_correct_result_for_the_99_of_porcentage(self):
+        assert  evaluate_number(99) == 1587000
+
     def test_validate_input_bouncy(self):
         assert not evaluate_number('assfsfs')
 
